@@ -6,8 +6,7 @@ Welcome to my project repository dedicated to augmented reality (AR) application
 
 | Section                                | Link                                               |
 |----------------------------------------|----------------------------------------------------|
-| [Implemented Projects](#implemented-projects) | [View Details](#implemented-projects)             |
-| [Augmented Reality for Public Transport](#augmented-reality-for-public-transport) | [View Details](#augmented-reality-for-public-transport) |
+| [Implemented Projects](#implemented-projects) | [View Details](#implemented-projects)             | [View Details](#augmented-reality-for-public-transport) |
 | [Future Applications](#future-applications) | [View Details](#future-applications)              |
 | [Contribution](#contribution)           | [View Details](#contribution)                     |
 
