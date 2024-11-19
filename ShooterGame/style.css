@@ -1,104 +1,103 @@
 .ui-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none; /* Allows interaction with AR content */
-  }
-  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allows interaction with AR content */
+}
+
+.health-bar {
+  position: absolute;
+  top: 30px; /* Adjusted for landscape */
+  left: 20px; /* Move to the left top corner */
+  width: 300px; /* Wider for landscape */
+  height: 25px; /* Slightly taller */
+  background-color: green;
+  z-index: 10; /* Ensure it appears above AR content */
+}
+
+.action-icon {
+  position: absolute;
+  bottom: 30px; /* Adjusted for landscape */
+  right: 30px; /* Adjusted for landscape */
+  width: 55px; /* Set to 55px */
+  height: 55px; /* Set to 55px */
+  background-size: cover; /* Ensures the icon covers the area */
+  z-index: 10; /* Ensure it appears above AR content */
+}
+
+.reload-icon {
+  background-image: url("https://cdn.glitch.global/2b4fc82f-28e7-4fbb-9ccc-6988dcf4935d/icons8-reload-50.png?v=1731931659224");
+  right: 80px; /* Adjust to position the reload icon */
+}
+
+.shoot-icon {
+  background-image: url("https://cdn.glitch.global/2b4fc82f-28e7-4fbb-9ccc-6988dcf4935d/icons8-crosshair-50.png?v=1731931390275");
+}
+.crosshair {
+  position: absolute;
+  top: 50%; /* Centered vertically */
+  left: 50%; /* Centered horizontally */
+  width: 48px; /* Size of the crosshair */
+  height: 48px; /* Size of the crosshair */
+  background-image: url("https://cdn.glitch.global/2b4fc82f-28e7-4fbb-9ccc-6988dcf4935d/icons8-crosshair-48.png?v=1731932956634");
+  background-size: cover; /* Ensures the icon covers the area */
+  transform: translate(-50%, -50%); /* Centering adjustment */
+  z-index: 10; /* Ensure it appears above AR content */
+}
+
+/* Media query for landscape orientation */
+@media (orientation: landscape) {
   .health-bar {
-    position: absolute;
-    top: 30px; /* Adjusted for landscape */
-    left: 20px; /* Move to the left top corner */
-    width: 300px; /* Wider for landscape */
-    height: 25px; /* Slightly taller */
-    background-color: green;
-    z-index: 10; /* Ensure it appears above AR content */
+    width: 300px; /* Adjusted width for landscape */
+    top: 20px; /* Adjusted for landscape */
+    left: 20px; /* Position at the top left corner */
   }
-  
+
   .action-icon {
-    position: absolute;
-    bottom: 30px; /* Adjusted for landscape */
-    right: 30px; /* Adjusted for landscape */
     width: 55px; /* Set to 55px */
     height: 55px; /* Set to 55px */
-    background-size: cover; /* Ensures the icon covers the area */
-    z-index: 10; /* Ensure it appears above AR content */
   }
-  
-  .reload-icon {
-    background-image: url("https://cdn.glitch.global/2b4fc82f-28e7-4fbb-9ccc-6988dcf4935d/icons8-reload-50.png?v=1731931659224");
-    right: 80px; /* Adjust to position the reload icon */
-  }
-  
+
   .shoot-icon {
-    background-image: url("https://cdn.glitch.global/2b4fc82f-28e7-4fbb-9ccc-6988dcf4935d/icons8-crosshair-50.png?v=1731931390275");
+    right: 30px; /* Position the shoot icon */
   }
+
+  .reload-icon {
+    right: 95px; /* Increased gap between icons */
+  }
+
   .crosshair {
-    position: absolute;
     top: 50%; /* Centered vertically */
     left: 50%; /* Centered horizontally */
-    width: 48px; /* Size of the crosshair */
-    height: 48px; /* Size of the crosshair */
-    background-image: url("https://cdn.glitch.global/2b4fc82f-28e7-4fbb-9ccc-6988dcf4935d/icons8-crosshair-48.png?v=1731932956634");
-    background-size: cover; /* Ensures the icon covers the area */
-    transform: translate(-50%, -50%); /* Centering adjustment */
-    z-index: 10; /* Ensure it appears above AR content */
   }
-  
-  /* Media query for landscape orientation */
-  @media (orientation: landscape) {
-    .health-bar {
-      width: 300px; /* Adjusted width for landscape */
-      top: 20px; /* Adjusted for landscape */
-      left: 20px; /* Position at the top left corner */
-    }
-  
-    .action-icon {
-      width: 55px; /* Set to 55px */
-      height: 55px; /* Set to 55px */
-    }
-  
-    .shoot-icon {
-      right: 30px; /* Position the shoot icon */
-    }
-  
-    .reload-icon {
-      right: 95px; /* Increased gap between icons */
-    }
-  
-    .crosshair {
-      top: 50%; /* Centered vertically */
-      left: 50%; /* Centered horizontally */
-    }
+}
+
+/* Media query for portrait orientation */
+@media (orientation: portrait) {
+  .health-bar {
+    width: 200px; /* Adjusted width for portrait */
+    top: 30px; /* Adjusted for portrait */
+    left: 50%; /* Centered horizontally */
+    transform: translateX(-50%); /* Centering adjustment */
   }
-  
-  /* Media query for portrait orientation */
-  @media (orientation: portrait) {
-    .health-bar {
-      width: 200px; /* Adjusted width for portrait */
-      top: 30px; /* Adjusted for portrait */
-      left: 50%; /* Centered horizontally */
-      transform: translateX(-50%); /* Centering adjustment */
-    }
-  
-    .action-icon {
-      width: 55px; /* Set to 55px */
-      height: 55px; /* Set to 55px */
-    }
-  
-    .shoot-icon {
-      right: 30px; /* Position the shoot icon */
-    }
-  
-    .reload-icon {
-      right: 90px; /* Increased gap between icons */
-    }
-  
-    .crosshair {
-      top: 50%; /* Centered vertically */
-      left: 50%; /* Centered horizontally */
-    }
+
+  .action-icon {
+    width: 55px; /* Set to 55px */
+    height: 55px; /* Set to 55px */
   }
-  
+
+  .shoot-icon {
+    right: 30px; /* Position the shoot icon */
+  }
+
+  .reload-icon {
+    right: 90px; /* Increased gap between icons */
+  }
+
+  .crosshair {
+    top: 50%; /* Centered vertically */
+    left: 50%; /* Centered horizontally */
+  }
+}
