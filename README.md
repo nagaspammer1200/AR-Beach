@@ -2,15 +2,6 @@
 
 Welcome to my project repository dedicated to augmented reality (AR) applications. This initiative aims to explore and implement innovative AR solutions with a focus on practical and engaging use cases.
 
-## Table of Contents
-
-| Section                                | Link                                               |
-|----------------------------------------|----------------------------------------------------|
-| [Implemented Projects](#implemented-projects) | [View Details](#implemented-projects)             | [View Details](#augmented-reality-for-public-transport) |
-| [Future Applications](#future-applications) | [View Details](#future-applications)              |
-| [Contribution](#contribution)           | [View Details](#contribution)                     |
-
-
 <details>
 <summary>Preview</summary>
 
